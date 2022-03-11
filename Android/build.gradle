@@ -1,0 +1,84 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+allprojects {
+    repositories {
+        // The order in which you list these repositories matter.
+        google()
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+
+buildscript{
+    repositories{
+        google()
+        jcenter()
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+
+    dependencies{
+        classpath "com.android.tools.build:gradle:7.0.2"
+    }
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+        versionCode 1
+        versionName "0.1.0"
+
+    }
+
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+// Because the components are created only during the afterEvaluate phase, you must
+// configure your publications using the afterEvaluate() lifecycle method.
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.github.alibaba'
+                artifactId = 'gaia-motion-curve'
+                version = '0.1.0'
+            }
+            // Creates a Maven publication called “debug”.
+            debug(MavenPublication) {
+                // Applies the component for the debug build variant.
+                from components.debug
+
+                groupId = 'com.github.alibaba'
+                artifactId = 'gaia-motion-curve'
+                version = '0.1.0-DEV'
+            }
+        }
+    }
+}
