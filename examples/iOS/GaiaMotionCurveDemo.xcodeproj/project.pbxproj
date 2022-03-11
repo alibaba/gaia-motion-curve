@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38A9F0A0730C2143AB0C335D /* Pods_GaiaMotionCurveDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1777894DF15A1F553B8F13 /* Pods_GaiaMotionCurveDemo.framework */; };
+		BDD9D2E827856E3F00EBB173 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD9D2DF27856E3F00EBB173 /* AnimationViewController.m */; };
+		BDD9D2E927856E3F00EBB173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDD9D2E127856E3F00EBB173 /* Assets.xcassets */; };
+		BDD9D2EA27856E3F00EBB173 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD9D2E227856E3F00EBB173 /* ViewController.m */; };
+		BDD9D2EB27856E3F00EBB173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD9D2E427856E3F00EBB173 /* main.m */; };
+		BDD9D2EC27856E3F00EBB173 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD9D2E527856E3F00EBB173 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		289C60759657D2E2EFDFEF52 /* Pods-GaiaMotionCurveDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaiaMotionCurveDemo.debug.xcconfig"; path = "Target Support Files/Pods-GaiaMotionCurveDemo/Pods-GaiaMotionCurveDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		38891F976456404BF388EEEF /* Pods-MotionCurveXDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionCurveXDemo.release.xcconfig"; path = "Target Support Files/Pods-MotionCurveXDemo/Pods-MotionCurveXDemo.release.xcconfig"; sourceTree = "<group>"; };
+		420D4DF7343696BFAF829EC0 /* Pods-GaiaMotionCurveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaiaMotionCurveDemo.release.xcconfig"; path = "Target Support Files/Pods-GaiaMotionCurveDemo/Pods-GaiaMotionCurveDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6B1777894DF15A1F553B8F13 /* Pods_GaiaMotionCurveDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaiaMotionCurveDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90F67799E93E453674EDC99D /* Pods-MotionCurveXDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionCurveXDemo.debug.xcconfig"; path = "Target Support Files/Pods-MotionCurveXDemo/Pods-MotionCurveXDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD9D2DF27856E3F00EBB173 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		BDD9D2E027856E3F00EBB173 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BDD9D2E127856E3F00EBB173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDD9D2E227856E3F00EBB173 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BDD9D2E327856E3F00EBB173 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		BDD9D2E427856E3F00EBB173 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDD9D2E527856E3F00EBB173 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BDD9D2E627856E3F00EBB173 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDD9D2E727856E3F00EBB173 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BDF1B56E2511EE9D00027F5E /* GaiaMotionCurveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaiaMotionCurveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDF1B56B2511EE9D00027F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A9F0A0730C2143AB0C335D /* Pods_GaiaMotionCurveDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		016BE3E9146014E0D55CE034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B1777894DF15A1F553B8F13 /* Pods_GaiaMotionCurveDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A2D3A7E33FF31674EF4E6AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90F67799E93E453674EDC99D /* Pods-MotionCurveXDemo.debug.xcconfig */,
+				38891F976456404BF388EEEF /* Pods-MotionCurveXDemo.release.xcconfig */,
+				289C60759657D2E2EFDFEF52 /* Pods-GaiaMotionCurveDemo.debug.xcconfig */,
+				420D4DF7343696BFAF829EC0 /* Pods-GaiaMotionCurveDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BDD9D2DE27856E3F00EBB173 /* GaiaMotionCurveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BDD9D2E327856E3F00EBB173 /* AnimationViewController.h */,
+				BDD9D2DF27856E3F00EBB173 /* AnimationViewController.m */,
+				BDD9D2E027856E3F00EBB173 /* AppDelegate.h */,
+				BDD9D2E527856E3F00EBB173 /* AppDelegate.m */,
+				BDD9D2E127856E3F00EBB173 /* Assets.xcassets */,
+				BDD9D2E627856E3F00EBB173 /* Info.plist */,
+				BDD9D2E427856E3F00EBB173 /* main.m */,
+				BDD9D2E727856E3F00EBB173 /* ViewController.h */,
+				BDD9D2E227856E3F00EBB173 /* ViewController.m */,
+			);
+			path = GaiaMotionCurveDemo;
+			sourceTree = "<group>";
+		};
+		BDF1B5652511EE9C00027F5E = {
+			isa = PBXGroup;
+			children = (
+				BDD9D2DE27856E3F00EBB173 /* GaiaMotionCurveDemo */,
+				BDF1B56F2511EE9D00027F5E /* Products */,
+				4A2D3A7E33FF31674EF4E6AC /* Pods */,
+				016BE3E9146014E0D55CE034 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDF1B56F2511EE9D00027F5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDF1B56E2511EE9D00027F5E /* GaiaMotionCurveDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDF1B56D2511EE9D00027F5E /* GaiaMotionCurveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF1B5872511EEA100027F5E /* Build configuration list for PBXNativeTarget "GaiaMotionCurveDemo" */;
+			buildPhases = (
+				A5F684BEC8213C6BD2B3CF61 /* [CP] Check Pods Manifest.lock */,
+				BDF1B56A2511EE9D00027F5E /* Sources */,
+				BDF1B56B2511EE9D00027F5E /* Frameworks */,
+				BDF1B56C2511EE9D00027F5E /* Resources */,
+				EE8091E4581C1D3B730205BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GaiaMotionCurveDemo;
+			productName = MotionCurveXDemo;
+			productReference = BDF1B56E2511EE9D00027F5E /* GaiaMotionCurveDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDF1B5662511EE9D00027F5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = ronghui;
+				TargetAttributes = {
+					BDF1B56D2511EE9D00027F5E = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = BDF1B5692511EE9D00027F5E /* Build configuration list for PBXProject "GaiaMotionCurveDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDF1B5652511EE9C00027F5E;
+			productRefGroup = BDF1B56F2511EE9D00027F5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDF1B56D2511EE9D00027F5E /* GaiaMotionCurveDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDF1B56C2511EE9D00027F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD9D2E927856E3F00EBB173 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5F684BEC8213C6BD2B3CF61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GaiaMotionCurveDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8091E4581C1D3B730205BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaiaMotionCurveDemo/Pods-GaiaMotionCurveDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaiaMotionCurveDemo/Pods-GaiaMotionCurveDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GaiaMotionCurveDemo/Pods-GaiaMotionCurveDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDF1B56A2511EE9D00027F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDD9D2EC27856E3F00EBB173 /* AppDelegate.m in Sources */,
+				BDD9D2EA27856E3F00EBB173 /* ViewController.m in Sources */,
+				BDD9D2EB27856E3F00EBB173 /* main.m in Sources */,
+				BDD9D2E827856E3F00EBB173 /* AnimationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BDF1B5852511EEA100027F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BDF1B5862511EEA100027F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDF1B5882511EEA100027F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289C60759657D2E2EFDFEF52 /* Pods-GaiaMotionCurveDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4ZRQF48G9;
+				INFOPLIST_FILE = GaiaMotionCurveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaia.GaiaMotionCurveDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BDF1B5892511EEA100027F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 420D4DF7343696BFAF829EC0 /* Pods-GaiaMotionCurveDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4ZRQF48G9;
+				INFOPLIST_FILE = GaiaMotionCurveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaia.GaiaMotionCurveDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDF1B5692511EE9D00027F5E /* Build configuration list for PBXProject "GaiaMotionCurveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF1B5852511EEA100027F5E /* Debug */,
+				BDF1B5862511EEA100027F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF1B5872511EEA100027F5E /* Build configuration list for PBXNativeTarget "GaiaMotionCurveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDF1B5882511EEA100027F5E /* Debug */,
+				BDF1B5892511EEA100027F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDF1B5662511EE9D00027F5E /* Project object */;
+}

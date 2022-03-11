@@ -1,0 +1,16 @@
+PODS:
+  - GaiaMotionCurve (0.1.0)
+
+DEPENDENCIES:
+  - GaiaMotionCurve (= 0.1.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GaiaMotionCurve
+
+SPEC CHECKSUMS:
+  GaiaMotionCurve: ece6f75d77f6aa8df28804416da467db64d224be
+
+PODFILE CHECKSUM: f1f14cba75d0390a6e6710446f6090cd2ea1de10
+
+COCOAPODS: 1.11.2
