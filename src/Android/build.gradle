@@ -1,4 +1,16 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+def githubProperties = new Properties()
+githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
+
+def getVersionName = { ->
+    return "0.1.0"
+}
+
+def getArtificatId = { ->
+    return "gaia-motion-curve"
+}
 
 allprojects {
     repositories {
@@ -26,7 +38,7 @@ android {
         minSdk 21
         targetSdk 32
         versionCode 1
-        versionName "0.1"
+        versionName "0.1.0"
 
     }
 
@@ -49,7 +61,31 @@ android {
     libraryVariants.all { variant ->
         variant.outputs.all { output ->
             if (outputFile != null && outputFileName.endsWith('.aar')) {
-                outputFileName = "gaia-motion-curve-${android.defaultConfig.versionName}.aar"
+                outputFileName = "${getArtificatId()}-release.aar"
+            }
+        }
+    }
+}
+
+publishing {
+    publications {
+        bar(MavenPublication) {
+            groupId 'com.gaia.libraries'
+            artifactId getArtificatId()
+            version getVersionName()
+            artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
+        }
+    }
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+
+            url = uri("https://maven.pkg.github.com/alibaba/gaia-motion-curve")
+
+            credentials {
+                username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
+                password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
             }
         }
     }
