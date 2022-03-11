@@ -2,7 +2,7 @@
 
 ## Demo
 
-<img src="./assets/accelerate.gif" height="30%" width="30%">
+<img src="../assets/accelerate.gif" height="30%" width="30%">
 
 ## iOS 
 

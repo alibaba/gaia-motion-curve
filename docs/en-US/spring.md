@@ -2,7 +2,7 @@
 
 ## Demo
 
-<img src="./assets/spring.gif" height="30%" width="30%">
+<img src="../assets/spring.gif" height="30%" width="30%">
 
 ## iOS 
 
