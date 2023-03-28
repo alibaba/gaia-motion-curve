@@ -189,10 +189,11 @@ static const void *kGMCAnimationKeys = &kGMCAnimationKeys;
 
         NSString *animationID = [anim valueForKey:@"gmc_identifier"];
 
-
-        [self removeAnimationForKey:animationID];
-
-        [self.gmc_animationKeys removeObjectForKey:animationID];
+        //View 不展示时（进入后台、View所在VC被Disappear）。动画不应被移除
+        if(flag) {
+            [self removeAnimationForKey:animationID];
+            [self.gmc_animationKeys removeObjectForKey:animationID];
+        }
 
 
         GMCCompletionBlock block = [keyAnimation valueForKey:@"gmc_completion_block"];
